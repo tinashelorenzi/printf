@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 			width = get_width(format, &index, list);
 			size = get_size(format, &index);
 			precision = get_precision(format, &index, list);
-			index ++
+			index ++;
 			shown = handler(format, &index, list, buffer, flags, width, precision, size);
 			if (shown == -1)
 			{
