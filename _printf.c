@@ -44,25 +44,25 @@ int _printf(const char *format, ...)
 				print_buff(buffer, &buff_ind);
 			shown_chars++;
 		}
-/*
-*		else
-*		{
-*			print_buff(buffer, &buff_ind);
-*			flags = get_flags(format, &i);
-*			width = get_width(format, &i, list);
-*			precision = get_precision(format, &i, list);
-*			size = get_size(format, &i);
-*			++i;
-*			shown = handle_print(format, &i, list, buffer,
-*				flags, width, precision, size);
-*			if (shown == -1)
-*				return (-1);
-*			shown_chars += shown;
-*		}
-*/
+		/* Task 1 and handler */
+		else
+		{
+			print_buff(buffer, &buff_ind);
+			flags = get_flags(format, &i);
+			width = get_width(format, &i, list);
+			precision = get_precision(format, &i, list);
+			size = get_size(format, &i);
+			++i;
+			shown = handle_print(format, &i, list, buffer,
+				flags, width, precision, size);
+			if (shown == -1)
+				return (-1);
+			shown_chars += shown;
+		}
+
 	}
 
-/*	print_buff(buffer, &buff_ind);*/
+	print_buff(buffer, &buff_ind);
 
 	va_end(list);
 
