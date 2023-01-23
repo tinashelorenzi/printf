@@ -51,4 +51,15 @@ int _printf(const char *format, ...)
 	print_buff(buffer, &buff_ind);
 	return (shown_char);
 }
+/**
+ * print_buff - Prints stuff in a buffer size if there's any
+ * @array: Array of chars into buff
+ * @buff_ind: Index to add preceeding char AKA Length
+*/
+void print_buff(char buffer[], int *buff_ind)
+{
+	if (*buff_ind > 0) /*Check the existance of the buffer*/
+		write(1, &buffer[0], *buff_ind); /*Perform buffer write*/
+	*buff_ind = 0;
+}
 
