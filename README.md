@@ -1,27 +1,27 @@
-ALX Printf Project. A revised printf function for c.
-Conversions handled: c, s, %, d, i, b, u, o, x, X
+ALX Printf Project. A revised printf function for c. <br />
+Conversions handled: c, s, %, d, i, b, u, o, x, X <br />
 
-Each conversion is handled by a different function
-{'c', print_char}, {'s', print_string}, {'%', print_percent},
-{'i', print_int}, {'d', print_int}, {'b', print_binary},
-{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
-{'X', print_hexa_upper}
+Each conversion is handled by a different function <br />
+{'c', print_char}, {'s', print_string}, {'%', print_percent}, <br />
+{'i', print_int}, {'d', print_int}, {'b', print_binary}, <br />
+{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal}, <br />
+{'X', print_hexa_upper} <br />
 
 
-Project tree
-<===============>
-├── functions1.c
-├── functions2.c
-├── functions.c
-├── get_flags.c
-├── get_precision.c
-├── get_size.c
-├── get_width.c
-├── handle_print.c
-├── main.h
-├── _printf.c
-├── README.md
-├── utils.c
-└── write_handlers.c
-
-0 directories, 13 files
+Project tree <br />
+<===============> <br />
+├── functions1.c <br />
+├── functions2.c <br />
+├── functions.c <br />
+├── get_flags.c <br />
+├── get_precision.c <br />
+├── get_size.c <br />
+├── get_width.c <br />
+├── handle_print.c <br />
+├── main.h <br />
+├── _printf.c <br />
+├── README.md <br />
+├── utils.c <br />
+└── write_handlers.c <br />
+<br />
+0 directories, 13 files <br />
